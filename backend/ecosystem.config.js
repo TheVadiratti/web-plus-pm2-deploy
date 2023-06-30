@@ -17,7 +17,7 @@ module.exports = {
       repo: 'git@github.com:TheVadiratti/web-plus-pm2-deploy.git',
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp ./.env ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
-      'post-deploy': `cd ${DEPLOY_PATH}/current && npm install && npm run build && pm2 start dist/app.js`,
+      'post-deploy': `cd ${DEPLOY_PATH}/current/backend && npm install && npm run build && pm2 start dist/app.js`,
     },
   },
 };
