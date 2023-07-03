@@ -138,7 +138,7 @@ class Api {
       .then(getResponse)
   }
   }
-  
-  const api = new Api('http://api.thevadiratti.nomoreparties.sbs');
+
+  const api = new Api('https://api.thevadiratti.nomoreparties.sbs');
 
   export default api;
