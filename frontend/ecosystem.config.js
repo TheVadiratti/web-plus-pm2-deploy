@@ -14,7 +14,7 @@ module.exports = {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
-      repo: 'git@github.com:TheVadiratti/web-plus-pm2-deploy.git',
+      repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
       'post-deploy': `cd ${DEPLOY_PATH}/current/frontend && npm install && npm run build`,
     },
